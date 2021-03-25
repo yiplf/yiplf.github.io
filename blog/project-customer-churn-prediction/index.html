@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>[Project] Customer Churn Prediction - Hugo Future Imperfect Slim</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.81.0" /><meta property="og:site_name" content="Hugo Future Imperfect Slim">
+  <meta property="og:title" content="[Project] Customer Churn Prediction">
+  <meta property="og:description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
+  <meta property="description" content="A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo.">
+  <meta property="og:url" content="https://yiplf.github.io/blog/project-customer-churn-prediction/">
+  <meta property="og:type" content="article">
+  
+    
+      <meta property="og:image" content="https://yiplf.github.io/img/2019/03/telco.jpg">
+      <meta property="og:image:alt" content="Desert Scene">
+    
+  
+  <link rel="stylesheet" href="https://yiplf.github.io/css/bundle.min.7af44880fa8f2867fbbf1b1e6758774b791bf321699b23f84be69e26e842c64a.css" integrity="sha256-evRIgPqPKGf7vxseZ1h3S3kb8yFpmyP4S&#43;aeJuhCxko="><link rel="stylesheet" href="https://yiplf.github.io/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="https://yiplf.github.io/" class="nav">
+        
+          Blog
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="https://yiplf.github.io/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="https://yiplf.github.io/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="https://yiplf.github.io/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="https://yiplf.github.io/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+        
+          
+          <a href="https://yiplf.github.io/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="https://yiplf.github.io/fr" lang="fr" class="nav no-lang link">Français (fr)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/pl" lang="pl" class="nav no-lang link">Polski (pl)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/pt" lang="pt" class="nav no-lang link">Português (pt)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/de" lang="de" class="nav no-lang link">Deutsche (de)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/es" lang="es" class="nav no-lang link">Española (es)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/zh-cn" lang="zh-cn" class="nav no-lang link">中文 (简体) (zh-cn)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/zh-tw" lang="zh-tw" class="nav no-lang link">中文 (正體) (zh-tw)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/ja" lang="ja" class="nav no-lang link">日本語 (ja)</a>
+      
+    
+      
+        <a href="https://yiplf.github.io/nl" lang="nl" class="nav no-lang link">Nederlands (nl)</a>
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%5bProject%5d%20Customer%20Churn%20Prediction&amp;url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;title=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;title=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;description=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Tony%20Yip&amp;body=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="https://yiplf.github.io/"><img src="https://yiplf.github.io/img/main/pfp.jpg" class="circle" width="100" alt="Tony Yip Profile Picture" /></a>
+  <header>
+    <h1>Tony Yip</h1>
+  </header>
+  <main>
+    <p>Aspiring Data Scientist</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//www.linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="https://yiplf.github.io/blog/project-customer-churn-prediction/">[Project] Customer Churn Prediction</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2021-03-19 00:00:00 &#43;0000 UTC">March 19, 2021</time>
+    <p>Tony Yip</p>
+    <p>2-Minute Read</p>
+  </div>
+</header>
+
+    <div id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%5bProject%5d%20Customer%20Churn%20Prediction&amp;url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;title=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <p>Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;title=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f&amp;description=%5bProject%5d%20Customer%20Churn%20Prediction" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <p>Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Tony%20Yip&amp;body=https%3a%2f%2fyiplf.github.io%2fblog%2fproject-customer-churn-prediction%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </div>
+    <div class="content">
+      <a href="https://yiplf.github.io/blog/project-customer-churn-prediction/" class="image" style="--bg-image: url('https://yiplf.github.io/img/2019/03/telco.jpg');">
+    <img class="" src="https://yiplf.github.io/img/2019/03/telco.jpg" alt="Desert Scene">
+  </a>
+      <hr>
+<p><strong>1. Business Objective</strong></p>
+<p>This is the <a href="https://yiplf.github.io/blog/telco.html" title="Telco Churn Prediction">Notebook</a></p>
+<p>Identify and retain customers <strong>who are likely to churn in</strong> a telecommunication company.</p>
+<p>Specifically, we attempt to answer these <strong>business questions</strong>:</p>
+<ul>
+<li>What are the customer characteristics (demographic &amp; behavioral) that would indicate a higher probability of churning?</li>
+<li>What is the profile of customers who have a relative higher churn rate than others?</li>
+<li>What is the probability of churn for each customer?</li>
+</ul>
+<hr>
+<p><strong>2. Data Understanding</strong></p>
+<p>Below is the Data Dictionary for the Telco Customer Churn dataset.</p>
+<details>
+    <summary> Click to Expand </summary>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Attribute Type</th>
+<th>Definition</th>
+<th>Unique Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>customerID</td>
+<td>categorical</td>
+<td>Unique id that identifies each   customer</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Churn</td>
+<td>categorical</td>
+<td>Indicates if customer has churned</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>categorical</td>
+<td>Customer’s gender</td>
+<td>Male, Female</td>
+</tr>
+<tr>
+<td>SeniorCitizen</td>
+<td>categorical</td>
+<td>Indicates if customer is 65 or   older</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>Partner</td>
+<td>categorical</td>
+<td>Indicates if customer has a   partner</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>Dependents</td>
+<td>categorical</td>
+<td>Indicates if customer has   dependent(s)</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>tenure</td>
+<td>numeric</td>
+<td>Total amount of months customer   has been with company by end of quarter</td>
+<td>-</td>
+</tr>
+<tr>
+<td>PhoneService</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to home phone services</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>MultipleLines</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to multiple phone lines</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>InternetService</td>
+<td>categorical</td>
+<td>Indicates if/which Internet   service company is subscribed to</td>
+<td>No, DSL, Fiber Optic</td>
+</tr>
+<tr>
+<td>OnlineSecurity</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to additional online security services</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>OnlineBackup</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to additional online backup services</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>DeviceProtection</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to additional device protection plan for the Internet equipment</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>TechSupport</td>
+<td>categorical</td>
+<td>Indicates if customer subscribes   to additional tech. support with reduced wait time</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>StreamingTV</td>
+<td>categorical</td>
+<td>Indicates if customer uses   Internet service to stream television programming from third part provider   (no extra charge from company)</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>StreamingMovies</td>
+<td>categorical</td>
+<td>Indicates if customer uses   Internet service to stream movies from third part provider (no extra charge   from company)</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>Contract</td>
+<td>categorical</td>
+<td>Indicates customer’s current   contract type</td>
+<td>Month-to-Month, One Year, Two Year</td>
+</tr>
+<tr>
+<td>PaperlessBilling</td>
+<td>categorical</td>
+<td>Indicates if customer has chosen   paperless billing</td>
+<td>Yes, No</td>
+</tr>
+<tr>
+<td>PaymentMethod</td>
+<td>categorical</td>
+<td>Indicates how customer pays their   bill</td>
+<td>Electronic check, Mailed check,   Bank transfer (automatic)’, Credit card (automatic)</td>
+</tr>
+<tr>
+<td>MonthlyCharges</td>
+<td>numeric</td>
+<td>Indicates customer’s current total   monthly charge</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TotalCharges</td>
+<td>numeric</td>
+<td>Indicates customer’s total charge   to the end of the quarter</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</details>
+<hr>
+<p><strong>3. Data Preparation</strong>,
+<strong>4. Modeling</strong>,
+<strong>5. Evaluation</strong></p>
+<hr>
+<p><strong>6. Deployment</strong></p>
+<hr>
+
+
+    </div>
+    <footer>
+      <div class="stats">
+  
+    <ul class="categories">
+      <li>None</li>
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="https://yiplf.github.io/tags/emoji/">emoji</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+    </footer>
+  </article>
+  
+    
+  <article class="post">
+    
+    <div>
+      <h2 id="say-something">Say Something</h2>
+        <form id="comment-form" class="new-comment" method="POST">
+          
+          <h3 class='reply-notice hidden'>
+            <span class='reply-name'></span>
+          </h3>
+
+          
+          <input type="hidden" name="options[entryId]" value="3ddc933065728aaab673b8a1eb8e09ec">
+          <input type='hidden' name='fields[replyThread]' value=''>
+          <input type='hidden' name='fields[replyID]' value=''>
+          <input type='hidden' name='fields[replyName]' value=''>
+
+          
+          <input required name='fields[name]' type='text' placeholder='Your Name'>
+          <input name='fields[website]' type='text' placeholder='Your Website'>
+          <input required name='fields[email]' type='email' placeholder='Your Email'>
+          <textarea required name='fields[body]' placeholder='Your Message' rows='10'></textarea>
+
+          
+          
+
+          
+          <div class='submit-notice'>
+            <strong class='submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+            <strong class='submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.</strong>
+          </div>
+
+          
+          <input type='submit' value='Submit' class='button'>
+          <input type='submit' value='Submitted' class='hidden button' disabled>
+          <input type='reset' value='Reset' class='button'>
+        </form>
+    </div>
+
+    
+    <div>
+      <h2>Comments</h2><p>Nothing yet.</p>
+      
+    </div>
+  </article>
+
+
+  
+  <div class="pagination">
+    
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="https://yiplf.github.io/blog/project-customer-churn-prediction/" class="image" style="--bg-image: url('https://yiplf.github.io/img/2019/03/telco.jpg');">
+    <img class="" src="https://yiplf.github.io/img/2019/03/telco.jpg" alt="Desert Scene">
+  </a>
+        <header>
+          <h2><a href="https://yiplf.github.io/blog/project-customer-churn-prediction/">[Project] Customer Churn Prediction</a></h2>
+          <time class="published" datetime="2021-03-19 00:00:00 &#43;0000 UTC">March 19, 2021</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="https://yiplf.github.io/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="https://yiplf.github.io/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//www.linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//www.pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    © 2021 Hugo Future Imperfect Slim
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.81.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="https://yiplf.github.io/js/highlight.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script><script src="https://yiplf.github.io/js/bundle.min.3636570d13f0810e9f3329e953a3f542a2628b6fb86b986c1962fda162cb74d7.js" integrity="sha256-NjZXDRPwgQ6fMynpU6P1QqJii2&#43;4a5hsGWL9oWLLdNc="></script>
+    <script src="https://yiplf.github.io/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
