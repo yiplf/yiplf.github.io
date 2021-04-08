@@ -1,0 +1,19 @@
+[{
+    "title": "[Project] Customer Churn Prediction",
+    "date": "",
+    "description": "",
+    "body": " Customer Turnover (or Churn) is an popular topic for subscription-based industries (e.g. T-Mobile, Netflix), particularly in telecommunications.\nIn this project, I used a dataset from a fictional telco company (from Kaggle \u0026amp; IBM) to train classification models.\nThe models can be deployed to determine whether a customer is likely to churn based on the probability assigned by the model to each customer in the dataset.\nClick on this page for the modeling process.\n ",
+    "ref": "/blog/project-customer-churn-prediction/"
+  },{
+    "title": "About Me",
+    "date": "",
+    "description": "",
+    "body": "  Hi, I am Tony Yip, an aspiring Data Scientist with two years of industry experience as an Data/BI Analyst.\nI have an academic background in Business Administration:\n Business Analytics and Decision-Making Management Information Systems Operations Management  All of which emphasize on the importance of data-driven decision making.\n I am a strong believer of each problem having multiple, creative solutions. All of which are supported, yet not limited to data visualization, modeling, and storytelling.\n Achieving business objectives is just as, if not, more important than the advanced methods or technology employed to influence business decisions.\n Whenever you need something to be built from GROUND ZERO, I am usually the one to talk to.\n",
+    "ref": "/about/"
+  },{
+    "title": "Contact",
+    "date": "",
+    "description": "",
+    "body": "",
+    "ref": "/contact/"
+  }]
