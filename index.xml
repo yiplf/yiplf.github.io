@@ -13,10 +13,10 @@
       <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://yiplf.github.io/blog/project-customer-churn-prediction/</guid>
-      <description>1. Business Objective
-Identify and retain customers who are likely to churn in a telecommunication company.
-Specifically, we attempt to answer these business questions:
- What are the customer characteristics (demographic &amp;amp; behavioral) that would indicate a higher probability of churning? What is the profile of customers who have a relative higher churn rate than others? What is the probability of churn for each customer?   2. Data Understanding</description>
+      <description>Customer Turnover (or Churn) is an popular topic for subscription-based industries (e.g. T-Mobile, Netflix), particularly in telecommunications.
+In this project, I used a dataset from a fictional telco company (from Kaggle &amp;amp; IBM) to train classification models.
+The models can be deployed to determine whether a customer is likely to churn based on the probability assigned by the model to each customer in the dataset.
+Click on this page for the modeling process.</description>
     </item>
     
     <item>
