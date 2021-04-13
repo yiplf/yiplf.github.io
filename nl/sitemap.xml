@@ -54,58 +54,6 @@
                 href="https://yiplf.github.io/nl/categories/"
                 />
   </url><url>
-    <loc>https://yiplf.github.io/nl/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://yiplf.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://yiplf.github.io/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://yiplf.github.io/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://yiplf.github.io/pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://yiplf.github.io/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://yiplf.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://yiplf.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://yiplf.github.io/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://yiplf.github.io/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://yiplf.github.io/nl/"
-                />
-  </url><url>
     <loc>https://yiplf.github.io/nl/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -156,6 +104,58 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://yiplf.github.io/nl/tags/"
+                />
+  </url><url>
+    <loc>https://yiplf.github.io/nl/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://yiplf.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://yiplf.github.io/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://yiplf.github.io/pl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://yiplf.github.io/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://yiplf.github.io/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://yiplf.github.io/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://yiplf.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://yiplf.github.io/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://yiplf.github.io/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://yiplf.github.io/nl/"
                 />
   </url>
 </urlset>
