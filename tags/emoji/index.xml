@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>emoji on Hugo Future Imperfect Slim</title>
+    <title>emoji on Tony&#39;s Blog for Data Science</title>
     <link>https://yiplf.github.io/tags/emoji/</link>
-    <description>Recent content in emoji on Hugo Future Imperfect Slim</description>
+    <description>Recent content in emoji on Tony&#39;s Blog for Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yiplf.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://yiplf.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Project] Real Estate Price Prediction</title>
+      <link>https://yiplf.github.io/blog/project-real-estate-price-prediction/</link>
+      <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://yiplf.github.io/blog/project-real-estate-price-prediction/</guid>
+      <description> Price Appraisal is an essential part of the real estate market.
+In this project, I used a real estate dataset compiled by others(from Kaggle) to train classification models.
+The models can be deployed to predict the sale price of a specific property given various features.
+Click on this page for modeling process in Python.
+ </description>
+    </item>
+    
     <item>
       <title>[Project] Customer Churn Prediction</title>
       <link>https://yiplf.github.io/blog/project-customer-churn-prediction/</link>
@@ -16,7 +29,7 @@
       <description>Customer Turnover (or Churn) is an popular topic for subscription-based industries (e.g. T-Mobile, Netflix), particularly in telecommunications.
 In this project, I used a dataset from a fictional telco company (from Kaggle &amp;amp; IBM) to train classification models.
 The models can be deployed to determine whether a customer is likely to churn based on the probability assigned by the model to each customer in the dataset.
-Click on this page for the modeling process.</description>
+Click on this page for the modeling process in Python.</description>
     </item>
     
   </channel>

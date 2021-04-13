@@ -1,14 +1,20 @@
 [{
+    "title": "[Project] Real Estate Price Prediction",
+    "date": "",
+    "description": "",
+    "body": " Price Appraisal is an essential part of the real estate market.\nIn this project, I used a real estate dataset compiled by others(from Kaggle) to train classification models.\nThe models can be deployed to predict the sale price of a specific property given various features.\nClick on this page for modeling process in Python.\n ",
+    "ref": "/blog/project-real-estate-price-prediction/"
+  },{
     "title": "[Project] Customer Churn Prediction",
     "date": "",
     "description": "",
-    "body": "  Customer Turnover (or Churn) is an popular topic for subscription-based industries (e.g. T-Mobile, Netflix), particularly in telecommunications.\nIn this project, I used a dataset from a fictional telco company (from Kaggle \u0026amp; IBM) to train classification models.\nThe models can be deployed to determine whether a customer is likely to churn based on the probability assigned by the model to each customer in the dataset.\nClick on this page for the modeling process.\n ",
+    "body": " Customer Turnover (or Churn) is an popular topic for subscription-based industries (e.g. T-Mobile, Netflix), particularly in telecommunications.\nIn this project, I used a dataset from a fictional telco company (from Kaggle \u0026amp; IBM) to train classification models.\nThe models can be deployed to determine whether a customer is likely to churn based on the probability assigned by the model to each customer in the dataset.\nClick on this page for the modeling process in Python.\n ",
     "ref": "/blog/project-customer-churn-prediction/"
   },{
     "title": "About Me",
     "date": "",
     "description": "",
-    "body": "  Hi, I am Tony Yip, an aspiring Data Scientist with two years of industry experience as an Data/BI Analyst.\nI have an academic background in Business Administration:\n Business Analytics and Decision-Making Management Information Systems Operations Management  All of which emphasize on the importance of data-driven decision making.\n I am a strong believer of each problem having multiple, creative solutions. All of which are supported, yet not limited to data visualization, modeling, and storytelling.\n Achieving business objectives is just as, if not, more important than the advanced methods or technology employed to influence business decisions.\n Whenever you need something to be built from GROUND ZERO, I am usually the one to talk to.\n",
+    "body": "  About Me\nHi, My name is Tony Yip, an aspiring Data Scientist with two years of industry experience as an Data/BI Analyst. I have an academic background in Business Administration, concentrating in Business Analytics and Decision-Making, Management Information Systems, and Operations Management.\nWork/Industry Experience\nI worked as a Data Analyst in a special trackwork manufacturing company. Throughout my career, I have supported the cause of inventory and manufacturing optimization through the creation of Power BI Dashboards, design and documentation of internal control processes, and hosting of meetings with production planners and managers.\nProjects and Technical Skills\nI am consistently working on new data science projects with Python and Power BI. For Python, I have used pandas and numpy to manage data preparations. I have also used sklearn and statsmodels to create predictive models. I have created visualizations with matplotlib and seaborn.\nFor Power BI, I have used\nCareer Objective\nI am working towards to field of Data Science and is open to junior data scientist positions in any industry.\n Hobbies\nI enjoy cooking, badminton, stock-trading, and working on cool, new data science projects!\n",
     "ref": "/about/"
   },{
     "title": "Contact",
